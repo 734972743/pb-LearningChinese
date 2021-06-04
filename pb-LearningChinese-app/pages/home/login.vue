@@ -72,7 +72,6 @@ export default{
 				    success: (res1) => {
 					console.log("res1",res1);
 				        let userInfo = res1.userInfo;
-						// console.log("res1",res1);
 				        if(userInfo){
 							//登录
 				         	param = {
@@ -95,33 +94,16 @@ export default{
 		
 		//调用后台接口登录
 		loginFun(param){
-				console.log("loginFun", param);
 			userApi.login(param, response=>{
 				let resp = response.data;
-				if(resp.code == 1){
+				if(resp.flag){
 					//保存用户信息
 					that.$store.commit("SET_LOGIN_USER_INFO", resp.data);
-					let uid = resp.data.id;
-					//提示信息和页面跳转
-					communityApi.getMyHobby(uid, response2=>{
-						let resp2 = response2.data;
-						if(resp2.code ==1){
-							// result = resp2.data;
-							if(resp2.data && resp2.data.length > 0){
-								uni.switchTab({
-									url: "/pages/community/index"
-								});
-							}else{
-								uni.navigateTo({
-									url: "/pages/topic/index"
-								})
-							}
-						}else{
-							that.showToast(resp2.msg);
-						}
+					uni.switchTab({
+						url: "/pages/home/index"
 					});
 				}else{
-					that.showToast(resp.msg);
+					that.showToast(resp.message);
 				}
 			});
 		}

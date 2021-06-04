@@ -28,6 +28,15 @@
 		color:red;
 	}
 	
+	.pageBody{
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+	}
+	
 	.submit{
 		background-color: @uni-button-bg-color !important;
 		font-size: 37.5rpx !important;

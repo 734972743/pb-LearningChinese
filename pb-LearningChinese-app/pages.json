@@ -17,6 +17,15 @@
 			}
 		},
 		{
+			"path": "pages/home/messageDetail",
+			"style": {
+				"navigationBarTitleText": "水产品生产安全管理",
+				"navigationBarBackgroundColor": "#9ECA4B",//顶部背景色
+			    "navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
+			}
+		},
+		
+		{
 			"path": "pages/game/index",
 			"style": {
 				"navigationBarTitleText": "水产品生产安全管理",
@@ -25,13 +34,39 @@
 			}
 		},
 		{
-			"path": "pages/study/index",
+			"path": "pages/game/guessPinyin",
 			"style": {
 				"navigationBarTitleText": "水产品生产安全管理",
 				"navigationBarBackgroundColor": "#9ECA4B",//顶部背景色
 			    "navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
 			}
 		},
+		{
+			"path": "pages/game/CYJielong",
+			"style": {
+				"navigationBarTitleText": "水产品生产安全管理",
+				"navigationBarBackgroundColor": "#9ECA4B",//顶部背景色
+			    "navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
+			}
+		},
+		
+		{
+			"path": "pages/tool/index",
+			"style": {
+				"navigationBarTitleText": "工具",
+				"navigationBarBackgroundColor": "#9ECA4B",//顶部背景色
+			    "navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
+			}
+		},
+		{
+			"path": "pages/tool/getPinyin",
+			"style": {
+				"navigationBarTitleText": "获取拼音",
+				"navigationBarBackgroundColor": "#9ECA4B",//顶部背景色
+			    "navigationBarTextStyle": "white" //文字颜色，目前只支持white和black这两种颜色（小程序）
+			}
+		},
+		
 		{
 			"path": "pages/myPage/index",
 			"style": {
@@ -63,8 +98,8 @@
 				"selectedIconPath":"static/xhdpi/icon_tangkouguanli-select.png"
 			},
 			{
-				"pagePath":"pages/study/index",
-				"text":"学习",
+				"pagePath":"pages/tool/index",
+				"text":"工具",
 				"iconPath":"static/xhdpi/icon_shuizhi.png",
 				"selectedIconPath":"static/xhdpi/icon_shuizhi_select.png"
 				
@@ -92,10 +127,38 @@
 				"name": "login", //模式名称
 				"path": "pages/home/login", //启动页面，必选
 				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			{
+				"name": "home", //模式名称
+				"path": "pages/home/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			{
+				"name": "messageDetail", //模式名称
+				"path": "pages/home/messageDetail", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			
+			{
+				"name": "game", //模式名称
+				"path": "pages/game/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			{
+				"name": "guessPinyin", //模式名称
+				"path": "pages/game/guessPinyin", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			{
+				"name": "CYJielong", //模式名称
+				"path": "pages/game/CYJielong", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			},
+			{
+				"name": "tool", //模式名称
+				"path": "pages/tool/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
-			
-			
-			
 		]
 	}
 }

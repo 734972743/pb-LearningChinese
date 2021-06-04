@@ -37,3 +37,13 @@ export function timeToTimestamp(timeStr, isToMillisecond){
 		return oldTime / 1000;
 	}
 }
+
+
+// 无标题的弹窗
+export  function showToast(title, duration = 2000){
+	uni.showToast({
+		title: title,
+		icon:'none',   //去掉图标，只显示文字提示框
+		duration
+	});
+}

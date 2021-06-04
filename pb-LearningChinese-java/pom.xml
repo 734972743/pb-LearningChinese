@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pb</groupId>
-	<artifactId>weixin</artifactId>
+	<artifactId>pb-LearningChinese-java</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
 
@@ -47,6 +47,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
 		</dependency>
 
 		<!-- servlet 依赖 -->
@@ -196,6 +201,13 @@
 		  <artifactId>jakarta.xml.bind-api</artifactId>
 		  <version>2.3.3</version>
 		</dependency>
+		
+		
+		<!--  log4j12日志适配器 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
 
 
 	</dependencies>

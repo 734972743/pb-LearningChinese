@@ -1,7 +1,7 @@
 import request from "../utils/request.js";
 
 /**
- * 塘口人员api
+ * 用户api
  */
 export default {
 	
